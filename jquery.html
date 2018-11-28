@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<title>Bootstrap 4 Login Page </title>
+	
+	
+	<style>
+	.color{
+	background-color:red;
+	}
+	</style>
+	<script>
+$(document).ready(function(){
+
+/*function change(){
+	 
+	 $('.one').click(function(){
+	  $(this).addClass('color')
+	   $('.two').removeClass('color');
+		$('.three').removeClass('color');
+	 })
+	  $('.two').click(function(){
+	  $(this).addClass('color')
+	  $('.one').removeClass('color');
+	   $('.three').removeClass('color');
+	 })
+  
+	 $('.three').click(function(){
+	  $(this).addClass('color')
+	   $('.one').removeClass('color');
+	  $('.two').removeClass('color');
+	 }) 
+}
+	 change();*/
+ 
+	/* ecch  function paramiter index,element pass hoy*/
+	
+		/*var id_value = $('.my_class').$(this).attr('id'); //get id value
+		 var name_value = $('.my_class').$(this).attr('name'); //get name value
+		 var value = $('.my_class').$(this).attr('value');
+		 var myVar = $("#start").find('.myClass').first().val();
+		 */
+	
+	
+	
+     
+  
+  $(".one").click(function(){
+	alert('First click')
+   $(".one").each(function(i,v){
+		console.log(i+':'+v)
+		alert('Remove color class each div')
+		$(v).removeClass("color")
+	});	
+	
+	$(this).addClass("color")
+	alert('Add color Class')
+  });
+  
+  
+  
+});
+	 
+	
+	
+      
+  
+  
+	</script>
+	
+</head>
+<body>
+ <div class="" style="height:100vh;width:100%;display:table"><!---$(this).addClass("color");	$(this).removeClass("color");START email ALIGN MIDDLE-->
+	<div class="align-middle" style="display:table-cell">
+		<div class="container">
+			<div class="col-3 py-5 border border-primary btn one">hi</div>
+			<div class="col-3 py-5 border border-primary btn one">gf</div>
+			<div class="col-3 py-5 border border-primary btn one">er</div>
+		</div>
+	</div>
+	</div>
+</div><!---END ALIGN MIDDLE--->
+		
+		
+		
+</body>
+</html>
